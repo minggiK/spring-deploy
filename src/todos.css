@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fffffd;
+}
+
+.todo-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 520px;
+    min-height: 600px;
+    background: #ffffff;
+    text-align: center;
+    margin: 8rem auto;
+    border: 1px solid var(--coz-blue-500);
+    border-radius: 2rem;
+    padding-bottom: 2rem;
+}
+
+.todo-app > h1 {
+    margin: 2rem 0 1rem 0;
+    color: var(--coz-blue-500);
+    font-size: 2rem;
+}
+
+.todo-app > h2 {
+    margin: 0 0 2rem 0;
+    color: var(--blackalpha-700);
+    font-size: 1rem;
+}
+
+.complete {
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+
+.todo-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+
+.todo-input {
+    padding: 1.5rem 1rem 1.5rem 1.5rem;
+    border: 2px solid var(--coz-purple-200);
+    outline: none;
+    width: 60%;
+    background: transparent;
+    color: var(--blackalpha-700);
+}
+
+.todo-input::placeholder {
+    color: var(--blackalpha-700);
+}
+
+.todo-button {
+    padding: 1.5rem;
+    border: 2px solid var(--coz-purple-200);
+    border-radius: 0 0.5rem 0.5rem 0;
+    outline: none;
+    background: linear-gradient(90deg,
+    var(--coz-purple-200) 0%,
+            var(--coz-purple-400) 100%);
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.wrapper-todo {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem auto;
+    border: none;
+    border-bottom: 2px solid var(--peach-300);
+    padding: 1rem;
+    width: 80%;
+    color: var(--blackalpha-700);
+}
+
+.todo-row:nth-child(4n + 1) {
+    border-bottom: 2px solid var(--coz-purple-400);
+}
+
+.todo-row:nth-child(4n + 2) {
+    border-bottom: 2px solid var(--coz-blue-400);
+}
+
+.todo-row:nth-child(4n + 3) {
+    border-bottom: 2px solid var(--mint-400);
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.delete-icon {
+    color: var(--blackalpha-700);
+}
